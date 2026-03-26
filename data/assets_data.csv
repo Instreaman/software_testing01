@@ -1,0 +1,3 @@
+login_user,login_pwd,category_name,category_code,expected_alert
+student,student,戴尔显示器,DELL-2026,保存成功！
+student,student,机械键盘,KEY-99,保存成功！

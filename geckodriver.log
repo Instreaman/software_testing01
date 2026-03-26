@@ -1,0 +1,269 @@
+1774491049553	geckodriver	INFO	Listening on 127.0.0.1:36931
+1774491050072	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "42373" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilet14ty9"
+*** You are running in headless mode.
+1774491050347	Marionette	INFO	Marionette enabled
+1774491050406	Marionette	INFO	Listening on port 39487
+WebDriver BiDi listening on ws://127.0.0.1:42373
+Read port: 39487
+1774491050506	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1774491061107	geckodriver	INFO	Listening on 127.0.0.1:40355
+1774491061129	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "40677" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7pxSCn"
+*** You are running in headless mode.
+1774491061413	Marionette	INFO	Marionette enabled
+1774491061468	Marionette	INFO	Listening on port 34903
+WebDriver BiDi listening on ws://127.0.0.1:40677
+Read port: 34903
+1774491061573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774491084038	Marionette	INFO	Stopped listening on port 34903
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491084505	geckodriver	INFO	Listening on 127.0.0.1:57507
+1774491085026	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "42667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileefz0T7"
+*** You are running in headless mode.
+1774491085276	Marionette	INFO	Marionette enabled
+1774491085340	Marionette	INFO	Listening on port 35087
+WebDriver BiDi listening on ws://127.0.0.1:42667
+Read port: 35087
+1774491085484	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774491107955	Marionette	INFO	Stopped listening on port 35087
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491182405	geckodriver	INFO	Listening on 127.0.0.1:42347
+1774491182432	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "60177" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelAeizH"
+*** You are running in headless mode.
+1774491182703	Marionette	INFO	Marionette enabled
+1774491182766	Marionette	INFO	Listening on port 46135
+WebDriver BiDi listening on ws://127.0.0.1:60177
+Read port: 46135
+1774491182862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491184730	Marionette	INFO	Stopped listening on port 46135
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491185293	geckodriver	INFO	Listening on 127.0.0.1:48543
+1774491185819	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "54259" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileB06jBc"
+*** You are running in headless mode.
+1774491186052	Marionette	INFO	Marionette enabled
+1774491186110	Marionette	INFO	Listening on port 43261
+Read port: 43261
+WebDriver BiDi listening on ws://127.0.0.1:54259
+1774491186146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491187957	Marionette	INFO	Stopped listening on port 43261
+JavaScript warning: http://10.65.8.254/pams/style/jquery/jquery.min.js, line 213: Script terminated by timeout at:
+r@http://10.65.8.254/pams/style/jquery/jquery.min.js:213:17
+each@http://10.65.8.254/pams/style/jquery/jquery.min.js:143:18
+each@http://10.65.8.254/pams/style/jquery/jquery.min.js:47:22
+on@http://10.65.8.254/pams/style/jquery/jquery.min.js:1970:18
+bind@http://10.65.8.254/pams/style/jquery/jquery.min.js:3195:25
+publicMethod.position/complete/<@http://10.65.8.254/pams/style/colorbox1.4.33/js/jquery.colorbox.js:673:15
+
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 1715: TypeError: can't access dead object
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+1774491198317	geckodriver	INFO	Listening on 127.0.0.1:33883
+1774491198342	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "39173" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNskN3X"
+*** You are running in headless mode.
+1774491198616	Marionette	INFO	Marionette enabled
+1774491198692	Marionette	INFO	Listening on port 42123
+WebDriver BiDi listening on ws://127.0.0.1:39173
+Read port: 42123
+1774491198788	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491201014	Marionette	INFO	Stopped listening on port 42123
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+1774491201607	geckodriver	INFO	Listening on 127.0.0.1:60429
+1774491202130	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "58089" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2cInZM"
+*** You are running in headless mode.
+1774491202377	Marionette	INFO	Marionette enabled
+1774491202439	Marionette	INFO	Listening on port 35155
+WebDriver BiDi listening on ws://127.0.0.1:58089
+Read port: 35155
+1774491202598	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774491204546	Marionette	INFO	Stopped listening on port 35155
+JavaScript warning: http://10.65.8.254/pams/style/My97DatePicker/WdatePicker.js, line 48: Script terminated by timeout at:
+J@http://10.65.8.254/pams/style/My97DatePicker/WdatePicker.js:48:2253
+@http://10.65.8.254/pams/style/My97DatePicker/WdatePicker.js:48:714
+@http://10.65.8.254/pams/style/My97DatePicker/WdatePicker.js:48:7851
+
+JavaScript warning: http://10.65.8.254/pams/style/jquery/jquery.min.js, line 1400: Script terminated by timeout at:
+@http://10.65.8.254/pams/style/jquery/jquery.min.js:1400:5
+j@http://10.65.8.254/pams/style/jquery/jquery.min.js:1201:112
+fireWith@http://10.65.8.254/pams/style/jquery/jquery.min.js:1256:106
+ready@http://10.65.8.254/pams/style/jquery/jquery.min.js:1356:53
+J@http://10.65.8.254/pams/style/jquery/jquery.min.js:1363:108
+
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491226248	geckodriver	INFO	Listening on 127.0.0.1:35131
+1774491226274	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "52001" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYOkN4D"
+*** You are running in headless mode.
+1774491226533	Marionette	INFO	Marionette enabled
+1774491226599	Marionette	INFO	Listening on port 39861
+WebDriver BiDi listening on ws://127.0.0.1:52001
+Read port: 39861
+1774491226714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491228873	Marionette	INFO	Stopped listening on port 39861
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+1774491229412	geckodriver	INFO	Listening on 127.0.0.1:33647
+1774491229931	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "52459" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWCNLJ1"
+*** You are running in headless mode.
+1774491230165	Marionette	INFO	Marionette enabled
+1774491230222	Marionette	INFO	Listening on port 41557
+Read port: 41557
+WebDriver BiDi listening on ws://127.0.0.1:52459
+1774491230267	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491232120	Marionette	INFO	Stopped listening on port 41557
+JavaScript warning: http://10.65.8.254/pams/style/jquery/jquery.min.js, line 46: Script terminated by timeout at:
+each@http://10.65.8.254/pams/style/jquery/jquery.min.js:46:23
+on@http://10.65.8.254/pams/style/jquery/jquery.min.js:1970:18
+bind@http://10.65.8.254/pams/style/jquery/jquery.min.js:3195:25
+publicMethod.position/complete/<@http://10.65.8.254/pams/style/colorbox1.4.33/js/jquery.colorbox.js:673:15
+
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491259736	geckodriver	INFO	Listening on 127.0.0.1:53155
+1774491259761	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "54049" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHTTC23"
+*** You are running in headless mode.
+1774491260033	Marionette	INFO	Marionette enabled
+1774491260094	Marionette	INFO	Listening on port 38629
+WebDriver BiDi listening on ws://127.0.0.1:54049
+Read port: 38629
+1774491260194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491261960	Marionette	INFO	Stopped listening on port 38629
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/fxrelay-denylist Signature failed  [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 11
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":29,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":28,"lineNumber":284,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":28,"lineNumber":235,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"validateCollectionSignature","sourceId":26,"lineNumber":1104,"columnNumber":49,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":19,"lineNumber":587,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1104:49\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:235:12\nvalidateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1104:49\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:284:15\nfetch@resource://services-settings/Utils.sys.mjs:235:12\nvalidateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1104:49\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:284:15\nfetch@resource://services-settings/Utils.sys.mjs:235:12\nvalidateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1104:49\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:284:15|fetch@resource://services-settings/Utils.sys.mjs:235:12|validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1104:49|observe@resource://gre/modules/AsyncShutdown.sys.mjs:587:17|
+  - prototype Object
+console.error: services.settings: 
+Object
+  - prototype Object
+    - columnNumber = 11
+    - data = null
+    - filename = resource://gre/modules/ServiceRequest.sys.mjs
+    - lineNumber = 126
+    - location = {"name":"open","filename":"resource://gre/modules/ServiceRequest.sys.mjs","sourceId":29,"lineNumber":126,"columnNumber":11,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch/<","sourceId":28,"lineNumber":284,"columnNumber":15,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetch","sourceId":28,"lineNumber":235,"columnNumber":12,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/Utils.sys.mjs","name":"fetchLatestChanges","sourceId":28,"lineNumber":446,"columnNumber":34,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"sync","sourceId":26,"lineNumber":658,"columnNumber":42,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://services-settings/RemoteSettingsClient.sys.mjs","name":"get/this._importingPromise<","sourceId":26,"lineNumber":496,"columnNumber":28,"asyncCause":null,"asyncCaller":null,"caller":{"filename":"resource://gre/modules/AsyncShutdown.sys.mjs","name":"observe","sourceId":19,"lineNumber":587,"columnNumber":17,"asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"observe@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"sync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"fetchLatestChanges@resource://services-settings/Utils.sys.mjs:446:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"fetch@resource://services-settings/Utils.sys.mjs:235:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:446:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"fetch/<@resource://services-settings/Utils.sys.mjs:284:15\nfetch@resource://services-settings/Utils.sys.mjs:235:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:446:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}},"formattedStack":"open@resource://gre/modules/ServiceRequest.sys.mjs:126:11\nfetch/<@resource://services-settings/Utils.sys.mjs:284:15\nfetch@resource://services-settings/Utils.sys.mjs:235:12\nfetchLatestChanges@resource://services-settings/Utils.sys.mjs:446:34\nsync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42\nget/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:587:17\n","nativeSavedFrame":{}}
+    - message = 
+    - name = 
+    - result = 2152071198
+    - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:284:15|fetch@resource://services-settings/Utils.sys.mjs:235:12|fetchLatestChanges@resource://services-settings/Utils.sys.mjs:446:34|sync@resource://services-settings/RemoteSettingsClient.sys.mjs:658:42|get/this._importingPromise<@resource://services-settings/RemoteSettingsClient.sys.mjs:496:28|observe@resource://gre/modules/AsyncShutdown.sys.mjs:587:17|
+  - prototype Object
+1774491262474	geckodriver	INFO	Listening on 127.0.0.1:48163
+1774491262993	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "38835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilerozoXc"
+*** You are running in headless mode.
+1774491263248	Marionette	INFO	Marionette enabled
+1774491263312	Marionette	INFO	Listening on port 42053
+WebDriver BiDi listening on ws://127.0.0.1:38835
+Read port: 42053
+1774491263456	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774491265147	Marionette	INFO	Stopped listening on port 42053
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0), 587))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: (new Error("Unable to arm timer, the object has been finalized.", "resource://gre/modules/DeferredTask.sys.mjs", 231))
+1774491470817	geckodriver	INFO	Listening on 127.0.0.1:42309
+1774491470851	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "50481" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWJkXZC"
+*** You are running in headless mode.
+1774491471118	Marionette	INFO	Marionette enabled
+1774491471179	Marionette	INFO	Listening on port 45295
+WebDriver BiDi listening on ws://127.0.0.1:50481
+Read port: 45295
+1774491471286	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+1774491473386	Marionette	INFO	Stopped listening on port 45295
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 1715: TypeError: can't access dead object
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 1715: TypeError: can't access dead object
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+1774491473960	geckodriver	INFO	Listening on 127.0.0.1:53425
+1774491474479	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/sbin/firefox" "-- ... ss" "--remote-debugging-port" "42551" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5SU5mh"
+*** You are running in headless mode.
+1774491474726	Marionette	INFO	Marionette enabled
+1774491474798	Marionette	INFO	Listening on port 33789
+WebDriver BiDi listening on ws://127.0.0.1:42551
+Read port: 33789
+1774491474942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://10.65.8.254."
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: [Exception... "ServiceManager::GetService returned failure code:"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/XPCOMUtils.sys.mjs :: defineLazyServiceGetter/< :: line 127"  data: no]
+1774491477078	Marionette	INFO	Stopped listening on port 33789
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

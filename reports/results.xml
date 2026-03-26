@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="test_assets.PamsTest-20260326101750" tests="2" file="test_assets.py" time="6.813" timestamp="2026-03-26T10:17:57" failures="0" errors="0" skipped="0">
+		<testcase classname="test_assets.PamsTest" name="test_add_asset_category_1___student____student____戴尔显示器____DELL_2026____保存成功___" time="3.143" timestamp="2026-03-26T10:17:53" file="tests/test_assets.py" line="50"/>
+		<testcase classname="test_assets.PamsTest" name="test_add_asset_category_2___student____student____机械键盘____KEY_99____保存成功___" time="3.670" timestamp="2026-03-26T10:17:57" file="tests/test_assets.py" line="50"/>
+	</testsuite>
+</testsuites>
