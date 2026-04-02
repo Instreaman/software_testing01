@@ -6,7 +6,7 @@
 
 ## 来源文件: 动态获取当前脚本的绝对路径目录.md
 
-自动化测试项目实战规范 (2026 迁移版)
+自动化测试项目实战规范
 
 适用环境：Arch Linux | VSCode | Firefox (GeckoDriver v0.36.0)
 1. 核心改进：工程化路径管理 (Robust Pathing)

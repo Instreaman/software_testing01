@@ -45,13 +45,18 @@ def get_test_data():
 class PamsTest(unittest.TestCase):
     def setUp(self):
         options = Options()
-        options.add_argument("--headless")
+        # 强制可视化运行，忽略 HEADLESS 环境变量。
+        # 如需恢复自动化无头运行，将下方注释去掉。
+        # headless_raw = os.getenv("HEADLESS", "1").strip().lower()
+        # is_headless = headless_raw not in {"0", "false", "no", "off"}
+        # if is_headless:
+        #     options.add_argument("--headless")
 
         # 每条用例独立启动浏览器，避免前一条用例状态污染。
         self.driver = webdriver.Firefox(options=options)
         self.driver.maximize_window()
-        self.driver.set_window_size(1920, 1080)
         self.driver.implicitly_wait(10)
+
 
     @ddt.data(*get_test_data())
     def test_add_asset_category(self, data):
@@ -63,15 +68,19 @@ class PamsTest(unittest.TestCase):
         try:
             # 1) 登录系统。
             driver.get("http://10.65.8.254/pams/front/login.do")
+            time.sleep(1.5)
             driver.find_element(By.ID, "loginName").send_keys(login_user)
+            time.sleep(1)
             driver.find_element(By.NAME, "password").send_keys(login_pwd)
+            time.sleep(1)
             driver.find_element(By.TAG_NAME, "button").click()
+            time.sleep(1.5)
 
             wait.until(EC.url_contains("index"))
             self.assertIn("front/index", driver.current_url, "登录失败")
+            time.sleep(1)
 
             # 2) 组装唯一测试数据，避免重复创建时冲突。
-            # Server requires 6-8 alnum chars for category code.
             base_code = "".join(ch for ch in category_code if ch.isalnum()).upper()
             now = int(time.time())
             code_suffix = str(now)[-2:]
@@ -79,19 +88,25 @@ class PamsTest(unittest.TestCase):
             name_suffix = f"{cn_tokens[now % 10]}{cn_tokens[(now // 10) % 10]}"
             unique_code = f"{base_code[:6]}{code_suffix}"[:8]
             unique_name = f"{category_name}{name_suffix}"
+            time.sleep(0.8)
 
             # 3) 进入“资产类别”并打开新增弹窗。
             wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "资产类别"))).click()
+            time.sleep(1.2)
             wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "yellow"))).click()
+            time.sleep(1.2)
 
             # 4) 填写表单并保存。
             wait.until(EC.presence_of_element_located((By.NAME, "title"))).send_keys(unique_name)
+            time.sleep(1)
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#code"))).send_keys(unique_code)
+            time.sleep(1)
             wait.until(
                 EC.element_to_be_clickable(
                     (By.XPATH, "//div[contains(@class,'modal')]//button[normalize-space()='保存']")
                 )
             ).click()
+            time.sleep(1.5)
 
             # 5) 一级断言：校验弹窗文本是否符合预期（容忍中英文叹号差异）。
             wait.until(EC.alert_is_present())
@@ -104,12 +119,15 @@ class PamsTest(unittest.TestCase):
                 actual_norm,
                 f"断言失败：预期[{expected_alert}]，实际[{alert_text}]",
             )
+            time.sleep(1)
             alert.accept()
+            time.sleep(1)
 
             # 6) 二级断言：页面表格中应出现刚创建的唯一编码。
             code_locator = (By.XPATH, f"//table//td[contains(., '{unique_code}')]")
             wait.until(EC.presence_of_element_located(code_locator))
             self.assertTrue(driver.find_element(*code_locator).is_displayed(), "页面二级断言失败：未找到新增编码")
+            time.sleep(1.2)
 
         except Exception:
             # Avoid UnexpectedAlertPresentException when taking screenshot.
