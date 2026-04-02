@@ -11,23 +11,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FALLBACK_SCREENSHOT_DIR = os.path.join(BASE_DIR, "..", "screenshots")
-WINDOWS_SCREENSHOT_DIR = r"E:\\test"
 LOGIN_URL = "http://10.65.8.254/pams/front/login.do"
-VISUAL_REACTION_DELAY = 0.6
+VISUAL_REACTION_DELAY = 2.0
 
 
 def get_screenshot_dir():
-    # 题目要求保存到 E 盘 test 目录；非 Windows 环境回落到仓库 screenshots 目录。
-    if os.name == "nt" and os.path.exists("E:\\"):
-        return WINDOWS_SCREENSHOT_DIR
     return FALLBACK_SCREENSHOT_DIR
 
 
 class PamsUnittestTask(unittest.TestCase):
     def setUp(self):
         options = Options()
-        # 与现有脚本保持一致：默认可视化运行，必要时可自行开启无头参数。
-        # 采用 eager 页面加载策略，DOM 可交互后立即继续，减少肉眼等待时间。
+        # 可视化运行，eager加载策略。
         options.set_capability("pageLoadStrategy", "eager")
         self.driver = webdriver.Firefox(options=options)
         self.driver.maximize_window()
@@ -44,7 +39,7 @@ class PamsUnittestTask(unittest.TestCase):
         return file_path
 
     def _fast_click_link_text(self, link_text):
-        # 快速路径：元素出现就用 JS 点击，减少 element_to_be_clickable 的等待时长。
+        # 优先JS点击，失败回退可点击等待。
         try:
             el = WebDriverWait(self.driver, 4).until(
                 EC.presence_of_element_located((By.LINK_TEXT, link_text))
@@ -57,7 +52,7 @@ class PamsUnittestTask(unittest.TestCase):
         self.wait.until(EC.element_to_be_clickable((By.LINK_TEXT, link_text))).click()
 
     def _find_login_inputs_by_class(self):
-        # 使用 CLASS_NAME 复数查找用户名和密码输入框。
+        # CLASS_NAME复数查找用户名密码。
         candidate_classes = ["form-control", "inputxt", "text", "input"]
         for class_name in candidate_classes:
             elements = self.driver.find_elements(By.CLASS_NAME, class_name)
@@ -76,7 +71,7 @@ class PamsUnittestTask(unittest.TestCase):
         raise NoSuchElementException("未通过 CLASS_NAME 复数定位到登录输入框")
 
     def _click_button_by_class_and_text(self, class_names, button_text):
-        # 通过 CLASS_NAME 找到目标按钮，再按文案筛选，满足题目定位方式要求。
+        # CLASS_NAME+文案筛选按钮。
         for class_name in class_names:
             elements = self.driver.find_elements(By.CLASS_NAME, class_name)
             for el in elements:
@@ -87,7 +82,7 @@ class PamsUnittestTask(unittest.TestCase):
         raise NoSuchElementException(f"未通过 CLASS_NAME 定位到按钮: {button_text}")
 
     def _send_keys_by_id_candidates(self, id_candidates, value, field_name):
-        # 避免逐个 find_element 叠加隐式等待：一次轮询匹配全部候选 ID。
+        # 多ID一次轮询，避免隐式等待叠加。
         selector = ",".join(f"#{element_id}" for element_id in id_candidates)
         self.driver.implicitly_wait(0)
         try:
@@ -108,13 +103,13 @@ class PamsUnittestTask(unittest.TestCase):
     def test_A(self):
         driver = self.driver
         try:
-            # 进入登录页，按题目要求使用 ID/NAME/TAG_NAME 登录。
+            # 登录页 ID/NAME/TAG_NAME。
             driver.get(LOGIN_URL)
             self.wait.until(EC.presence_of_element_located((By.ID, "loginName"))).send_keys("student")
             self.wait.until(EC.presence_of_element_located((By.NAME, "password"))).send_keys("student")
             driver.find_element(By.TAG_NAME, "button").click()
 
-            # 题目要求：执行截图并保存。
+            # 截图。
             screenshot_path = self._take_screenshot("test_A_login")
             self.assertTrue(os.path.exists(screenshot_path), "截图文件未生成")
             print(f"test_A 截图保存路径: {screenshot_path}")
@@ -128,7 +123,7 @@ class PamsUnittestTask(unittest.TestCase):
         driver = self.driver
         wait = self.wait
         try:
-            # 进入登录页，按题目要求使用 CLASS_NAME 复数定位账号和密码输入框。
+            # 登录页 CLASS_NAME 复数。
             driver.get(LOGIN_URL)
             username_input, password_input = self._find_login_inputs_by_class()
             username_input.clear()
@@ -136,22 +131,23 @@ class PamsUnittestTask(unittest.TestCase):
             password_input.clear()
             password_input.send_keys("student")
 
-            # 通过 TAG_NAME 登录。
+            # TAG_NAME 登录。
             driver.find_element(By.TAG_NAME, "button").click()
             wait.until(EC.url_contains("index"))
 
-            # 通过 LINK_TEXT 点击“品牌”（快速路径）。
-            self._fast_click_link_text("品牌")
-            # 给肉眼一个短暂反应时间，避免流程快到看不清。
-            time.sleep(VISUAL_REACTION_DELAY)
 
-            # 通过 CLASS_NAME 点击“新增”。
+            # LINK_TEXT点击品牌。
+            self._fast_click_link_text("品牌")
+
+            # CLASS_NAME点击新增。
             self._click_button_by_class_and_text(
                 ["yellow", "btn", "btn-primary", "add", "button"],
                 "新增",
             )
+            # 新增弹窗出现后缓冲。
+            time.sleep(VISUAL_REACTION_DELAY)
 
-            # 通过 ID 输入品牌名称和品牌编码。
+            # ID输入品牌名和编码。
             now = int(time.time())
             cn_tokens = "甲乙丙丁戊己庚辛壬癸"
             suffix = f"{cn_tokens[now % 10]}{cn_tokens[(now // 10) % 10]}"
@@ -168,13 +164,13 @@ class PamsUnittestTask(unittest.TestCase):
                 "品牌编码",
             )
 
-            # 通过 CLASS_NAME 点击“保存”。
+            # CLASS_NAME点击保存。
             self._click_button_by_class_and_text(
                 ["btn", "btn-primary", "green", "save", "button"],
                 "保存",
             )
 
-            # 若出现弹窗则接收，避免影响后续截图与关闭浏览器。
+            # 处理弹窗。
             try:
                 WebDriverWait(driver, 4).until(EC.alert_is_present())
                 alert = driver.switch_to.alert
@@ -189,7 +185,7 @@ class PamsUnittestTask(unittest.TestCase):
             raise
 
     def tearDown(self):
-        # 与现有脚本一致：无论成功失败都释放浏览器进程。
+        # 关闭浏览器。
         self.driver.quit()
 
 
